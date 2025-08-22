@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akua Agyare - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .text-purple-accent {
+            color: #8B5CF6;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- Top Navigation Bar -->
+    <header class="w-full bg-gray-800 py-4 px-8 fixed top-0 left-0 z-50 shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-purple-accent">AA CREATION</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="profile.html"
+                    class="text-gray-400 hover:text-purple-accent transition-colors duration-300">Profile</a>
+                <a href="#experience"
+                    class="text-gray-400 hover:text-purple-accent transition-colors duration-300">Experience</a>
+                <a href="#tech-stack" class="text-gray-400 hover:text-purple-accent transition-colors duration-300">Tech
+                    Stack</a>
+                <a href="projects.html"
+                    class="text-gray-400 hover:text-purple-accent transition-colors duration-300">Projects</a>
+                <a href="connect.html"
+                    class="text-gray-400 hover:text-purple-accent transition-colors duration-300">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-400 hover:text-purple-accent focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-20">
+
+        <!-- About Section -->
+        <section id="about" class="mb-12">
+            <h1 class="text-4xl font-bold mb-4 text-purple-accent">About Me</h1>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <div class="md:flex items-center">
+                    <img src="images/profilepic.jpg" alt="Akua Agyare"
+                        class="w-36 h-36 rounded-full border-4 border-purple-accent mb-4 md:mb-0 md:mr-8 mx-auto">
+                    <div>
+                        <h2 class="text-3xl font-semibold">Akua Agyare</h2>
+                        <p class="text-xl text-gray-400 mb-4">Product Developer & Designer</p>
+                        <p class="text-gray-300">Multi-disciplinary Software Developer and data scientist with 4+ years'
+                            experience in full-stack mobile/web application development, UI/UX product design, and
+                            product analytics. Specialized in Flutter and Django with a portfolio spanning environmental
+                            sustainability, health tech, and socio-economic solutions. Proven track record in predictive
+                            modelling, RESTful API integration, design prototyping, and real-time dashboarding.
+                            Passionate about inclusive technology, impact-driven platforms, and scaling African tech
+                            innovation.</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center md:text-left">
+                    <a href="ShammahAgyare-ProductDev & Designer.pdf" download
+                        class="inline-block px-6 py-3 bg-purple-accent text-white font-semibold rounded-full shadow-lg hover:bg-purple-700 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-12">
+            <h2 class="text-4xl font-bold mb-6 text-purple-accent">Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-2">Backend developer & BI analyst (Consultant)</h3>
+                    <p class="text-sm text-gray-400">Aqualinqs Digital Agency | 09/2022 - 04/2025</p>
+                    <ul class="list-disc list-inside mt-4 text-gray-300 space-y-2">
+                        <li>Developed Flutter-based EcoMine Watch mobile app to monitor illegal mining (Galamsey)
+                            impacts in Ghana.</li>
+                        <li>Designed 10+ cross-platform applications using Flutter framework.</li>
+                        <li>Increased client satisfaction rate by 20% by implementing automated reporting systems.</li>
+                        <li>Enhanced product deployment speed by 35% by integrating automated testing protocols.</li>
+                        <li>Boosted the DeafCan Talk Mobile App user interface satisfaction by 30%.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-2">Data scientist & Product Designer</h3>
+                    <p class="text-sm text-gray-400">Best Sight Opticals limited | 08/2023 - 07/2024</p>
+                    <ul class="list-disc list-inside mt-4 text-gray-300 space-y-2">
+                        <li>Built a CRM dashboard with Firebase and Flutter improving retention by 40%.</li>
+                        <li>Deployed a customer retention prediction model (85% accuracy).</li>
+                        <li>Spearheaded a Python-based predictive analytics modelling project.</li>
+                        <li>Created Flutterflow UI/UX prototypes for patient engagement and service flow.</li>
+                        <li>Supported integration of 30 APIs, managing data flow across 20 applications.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="tech-stack" class="mb-12">
+            <h2 class="text-4xl font-bold mb-6 text-purple-accent">Tech Stack & Tools</h2>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Languages & Frameworks</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Python, JavaScript, Dart, SQL</li>
+                            <li>Django, Node.js, Express.js, HTML, CSS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">UI/UX & Front-End</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Figma, Canva, Flutter, Adobe</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Databases</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>PostgreSQL, MySQL, SQLite, MongoDB, MS SQL Server, Firebase</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Data & Analytics</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Apache Airflow, Power Automate, NumPy, Pandas, Scikit-Learn</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Cloud & Infrastructure</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Google Cloud, AWS, Firebase, Docker</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Other Tools</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Git, ArcGIS, Trello, Slack, GitHub Pages, Visual Studio, CRM Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="text-center py-4 text-sm text-gray-500">
+        <p>&copy; 2025 Shammah Agyare. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

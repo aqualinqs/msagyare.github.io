@@ -1,0 +1,241 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f8f8f8;
+}
+
+
+header {
+    background-color: #f8f8f8;
+    color: #C821FF;
+    padding: 1rem 5rem;
+    font-weight: bold;
+    font-size: large;
+    padding: 0.8rem 0.8rem;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2000;
+    opacity: 0.9;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    color: #121212;
+    margin: 0;
+    display: flex;
+}
+
+
+nav ul li a {
+    display: block;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #C821FF;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
+    /* background-repeat: no-repeat */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.profile-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    padding-left: 100px;
+}
+
+
+.profile-pic {
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+    margin-left: 50px;
+    border: 3px solid #C821FF;
+}
+
+
+.social-icons a {
+    position: relative;
+    display: list-item;
+    flex-direction: column;
+    gap: 40px;
+    filter: invert(10%);
+    margin: 20px 0px 20px;
+    opacity: 1;
+    align-items: center;
+    padding-left: 30px;
+    line-height: 4;
+}
+
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease, filter 0.5s ease;
+
+}
+
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: invert(0) drop-shadow(0 0 5px rgb(246, 243, 248));
+}
+
+.intro-statement {
+    text-align: justify;
+    flex-direction: row;
+    flex-grow: 2;
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    color: #fffefe;
+}
+
+.animated-title {
+    font-size: 1.8rem;
+    color: #C821FF;
+    margin-bottom: 15px;
+    margin-left: 60px;
+    transition-property: 0.7s;
+}
+
+.catch-phrase {
+    font-style: italic;
+    color: #fffefe;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.summary {
+    line-height: 1.0;
+    display: inline;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-left: 60px;
+}
+
+.description {
+    line-height: 1.0;
+    display: inline;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-left: 60px;
+}
+
+.cta-buttons h4 {
+    line-height: 1.0;
+    display: inline;
+    align-items: center;
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.cta-buttons p {
+    line-height: 1.0;
+    display: inline-block;
+    text-align: left;
+    padding: 15px 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 200px;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+
+.primary-button {
+    background-color: #C821FF;
+    color: #f8f8f8;
+}
+
+
+.primary-button:hover {
+    background-color: #7300cc;
+}
+
+
+.secondary-button {
+    border: 1px solid #C821FF;
+    color: #C821FF;
+}
+
+
+.secondary-button:hover {
+    background-color: #a0f;
+    color: #f8f8f8;
+}
+
+
+footer {
+    background-color: #ffffffef;
+    color: #101010;
+    text-align: center;
+    padding: 0.6rem 5rem;
+    margin-bottom: auto;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}

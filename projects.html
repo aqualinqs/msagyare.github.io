@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA Designs Portfolio</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/project.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-light-gray">
+
+    <header class="w-full bg-black py-4 px-8 fixed top-0 left-0 z-50 shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-purple-accent">AA CREATION</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="profile.html"
+                    class="text-gray-400 hover:text-purple-accent transition-colors duration-300">Profile</a>
+                <a href="experience.html"
+                    class="text-gray-400 hover:text-purple-accent transition-colors duration-300">Experience</a>
+                <a href="projects.html" class="text-purple-accent">Projects</a>
+                <a href="connect.html"
+                    class="text-gray-400 hover:text-purple-accent transition-colors duration-300">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-400 hover:text-purple-accent focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+    </header>
+    <main class="projects-layout">
+        <!-- Sidebar -->
+        <aside
+            class="sidebar bg-dark-gray text-light-gray p-8 text-center flex flex-col items-center fixed top-0 left-0 h-screen w-80">
+            <div class="mb-6">
+                <img src="images/profilepic.jpg" alt="Profile"
+                    class="w-36 h-36 rounded-full border-4 border-purple-accent mb-4">
+                <h2 class="text-2xl font-bold mb-1">Akua Agyare</h2>
+                <p class="text-sm text-gray-400">Product Developer | BI Analyst | UI/UX Designer</p>
+            </div>
+            <div class="space-y-4 text-left w-full max-w-xs">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-envelope text-purple-accent"></i>
+                    <a href="mailto:v4cjghana@gmail.com"
+                        class="text-gray-300 hover:text-purple-accent text-sm">v4cjghana@gmail.com</a>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-phone-alt text-purple-accent"></i>
+                    <span class="text-gray-300 text-sm">+233 201739962</span>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 mt-8">
+                <a href="https://linkedin.com/in/akua-agyare"
+                    class="text-purple-accent text-xl hover:scale-125 transition-transform duration-300"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MsAgyare"
+                    class="text-purple-accent text-xl hover:scale-125 transition-transform duration-300"
+                    aria-label="GitHub"><i class="fab fa-github-square"></i></a>
+                <a href="https://medium.com/@v4cjghana"
+                    class="text-purple-accent text-xl hover:scale-125 transition-transform duration-300"
+                    aria-label="Medium"><i class="fab fa-medium"></i></a>
+            </div>
+        </aside>
+
+
+        <!-- Main Content Area -->
+        <div class="main-content ml-80 w-auto p-12 bg-black">
+            <!-- Projects Section -->
+            <section id="projects" class="min-h-screen p-12 flex flex-col items-center bg-black">
+                <h2 class="text-4xl font-bold text-purple-accent mb-8">My Projects</h2>
+                <div class="flex justify-center space-x-4 md:space-x-8 mb-12 text-sm md:text-base font-medium">
+                    <button
+                        class="project-tab text-purple-accent border-b-2 border-purple-accent pb-2 transition-all duration-300"
+                        data-tab="all">All Projects</button>
+                    <button
+                        class="project-tab text-gray-400 hover:text-purple-accent hover:border-b-2 hover:border-purple-accent pb-2 transition-all duration-300"
+                        data-tab="product">Product Development</button>
+                    <button
+                        class="project-tab text-gray-400 hover:text-purple-accent hover:border-b-2 hover:border-purple-accent pb-2 transition-all duration-300"
+                        data-tab="bi">BI Analyst</button>
+                    <button
+                        class="project-tab text-gray-400 hover:text-purple-accent hover:border-b-2 hover:border-purple-accent pb-2 transition-all duration-300"
+                        data-tab="uiux">UI/UX Design</button>
+                </div>
+
+                <div id="projects-container" class="w-full max-w-6xl">
+                    <div class="projects-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Project Card 1 (Product Development) -->
+                        <div class="project-card bg-dark-gray p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300"
+                            data-category="product">
+                            <img src="images/audiophile.jpg" alt="E-commerce Platform"
+                                class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2">Audiophile Estore</h4>
+                            <p class="text-sm text-gray-400 mb-4">An e-commerce solution with AI integrated
+                                shopping assistance and user management.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="https://audiophile-estore.vercel.app/"
+                                    class="text-sm text-purple-accent hover:underline">View Details</a>
+                                <div class="flex space-x-4 text-gray-500">
+                                    <button
+                                        class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 like-btn"><i
+                                            class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                                    <button
+                                        class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 comment-btn"><i
+                                            class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-dark-gray p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300"
+                            data-category="product">
+                            <img src="images/smartretire2.webp" alt="E-commerce Platform"
+                                class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2">SMART RETIRE</h4>
+                            <p class="text-sm text-gray-400 mb-4">A mobile-first freemium retirement planner for
+                                personal financial planning, savings and investments. || Flutter | MySQL | DartCharts
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <a href="https://github.com/aqualinqs/retirement-monitor"
+                                    class="text-sm text-purple-accent hover:underline">View Details</a>
+                                <div class="flex space-x-4 text-gray-500">
+                                    <button
+                                        class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 like-btn"><i
+                                            class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                                    <button
+                                        class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 comment-btn"><i
+                                            class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Card 2 (BI Analyst) -->
+                        <div class="project-card bg-dark-gray p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300"
+                            data-category="bi">
+                            <img src="images/GBG.png" alt="Sales Dashboard"
+                                class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2">MOVING GHANA BEYOND GALAMSEY</h4>
+                            <p class="text-sm text-gray-400 mb-4">A Predictive Analytics Dashboard with ML Modelling for
+                                Galmsey Monitoring || Python - Streamlit || ML</p>
+                            <div class="flex justify-between items-center">
+                                <a href="https://github.com/aqualinqs/Galamsey-DataViz-Project"
+                                    class="text-sm text-purple-accent hover:underline">View Details</a>
+                                <div class="flex space-x-4 text-gray-500">
+                                    <button
+                                        class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 like-btn"><i
+                                            class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                                    <button
+                                        class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 comment-btn"><i
+                                            class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-dark-gray p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300"
+                            data-category="bi">
+                            <img src="images/supplychainemission.jpg" alt="Sales Dashboard"
+                                class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2">Sustainability Analytics Dashboard</h4>
+                            <p class="text-sm text-gray-400 mb-4">Building a sustainable supply chain in agriculture
+                                with Data and visualization
+                                || Python || Power BI</p>
+                            <div class="flex justify-between items-center">
+                                <a href="https://github.com/aqualinqs/Python_Projects"
+                                    class="text-sm text-purple-accent hover:underline">View Details</a>
+                                <div class="flex space-x-4 text-gray-500">
+                                    <button
+                                        class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 like-btn"><i
+                                            class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                                    <button
+                                        class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 comment-btn"><i
+                                            class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project Card 3 (UI/UX Design) -->
+                        <div class="project-card bg-dark-gray p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300"
+                            data-category="uiux">
+                            <img src="images/DeafTalks.png" alt="Mobile App UI"
+                                class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2">DeafCanTalk Mobile App</h4>
+                            <p class="text-sm text-gray-400 mb-4">A modern and clean User-centric app for bridging
+                                communication gap among Deaf communities</p>
+                            <div class="flex justify-between items-center">
+                                <a href="https://www.figma.com/proto/UAX6qJLH0bZat7wR0AAngF/DeafCanTalk?node-id=123-8&t=TtfVZuiOXEsCXPnC-1"
+                                    class="text-sm text-purple-accent hover:underline">View Details</a>
+                                <div class="flex space-x-4 text-gray-500">
+                                    <button
+                                        class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 like-btn"><i
+                                            class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                                    <button
+                                        class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 comment-btn"><i
+                                            class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Stories Section -->
+            <section id="blogs" class="min-h-screen p-12 flex flex-col items-center bg-dark-gray">
+                <h2 class="text-4xl font-bold text-purple-accent mb-12">Blog Stories</h2>
+                <div class="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Blog Post 1 -->
+                    <div
+                        class="blog-card bg-black p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/1e1e1e/fff?text=Blog+Post+1" alt="Blog Post 1"
+                            class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">The Power of Data Visualization</h4>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-3">Discover how powerful data visualization can
+                            transform complex datasets into clear, actionable insights for your business.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-sm text-purple-accent hover:underline">Read More</a>
+                            <div class="flex space-x-4 text-gray-500">
+                                <button
+                                    class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 like-btn"><i
+                                        class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                                <button
+                                    class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 comment-btn"><i
+                                        class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Post 2 -->
+                    <div
+                        class="blog-card bg-black p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/1e1e1e/fff?text=Blog+Post+2" alt="Blog Post 2"
+                            class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">Building a Resilient Career in Tech</h4>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-3">A guide to navigating the ever-changing tech
+                            landscape, focusing on continuous learning and adaptation.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-sm text-purple-accent hover:underline">Read More</a>
+                            <div class="flex space-x-4 text-gray-500">
+                                <button
+                                    class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 like-btn"><i
+                                        class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                                <button
+                                    class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 comment-btn"><i
+                                        class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Post 3 -->
+                    <div
+                        class="blog-card bg-black p-6 rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/1e1e1e/fff?text=Blog+Post+3" alt="Blog Post 3"
+                            class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h4 class="text-xl font-semibold mb-2">The Art of Minimalist UI Design</h4>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-3">Explore the principles behind creating clean,
+                            intuitive, and visually appealing user interfaces with a minimalist approach.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-sm text-purple-accent hover:underline">Read More</a>
+                            <div class="flex space-x-4 text-gray-500">
+                                <button
+                                    class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 like-btn"><i
+                                        class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                                <button
+                                    class="flex items-center space-x-1 hover:text-purple-accent transition-colors duration-300 comment-btn"><i
+                                        class="fas fa-comment"></i> <span class="comment-count">0</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="fixed bottom-5 right-5 flex flex-col space-y-3 z-50">
+        <button id="scrollUpBtn"
+            class="bg-purple-accent text-white p-3 rounded-full shadow-lg hover:bg-purple-dark transition-colors duration-300"
+            aria-label="Scroll Up"><i class="fas fa-arrow-up"></i></button>
+        <button id="scrollDownBtn"
+            class="bg-purple-accent text-white p-3 rounded-full shadow-lg hover:bg-purple-dark transition-colors duration-300"
+            aria-label="Scroll Down"><i class="fas fa-arrow-down"></i></button>
+    </div>
+
+    <script src="projects.js"></script>
+</body>
+
+</html>

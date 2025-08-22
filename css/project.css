@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #f8f8f8;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Reusable Components & Utilities */
+.bg-black {
+    background-color: #121212;
+}
+
+.bg-dark-gray {
+    background-color: #1c1c1c;
+}
+
+.bg-purple-accent {
+    background-color: #a0f;
+}
+
+.bg-purple-dark {
+    background-color: #7300cc;
+}
+
+.text-light-gray {
+    color: #f8f8f8;
+}
+
+.text-purple-accent {
+    color: #a0f;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+.hover\:scale-125:hover {
+    transform: scale(1.25);
+}
+
+.transition-transform {
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color;
+    transition-duration: 300ms;
+}
+
+/* Layout & Positioning */
+.projects-layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 20rem;
+    /* 320px */
+    overflow-y: hidden;
+    /* This prevents scrolling on the sidebar */
+}
+
+.main-content {
+    margin-left: 20rem;
+    width: calc(100% - 20rem);
+}
+
+/* Projects and Blog Sections */
+.project-tab {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding-bottom: 0.5rem;
+    transition: all 0.3s;
+}
+
+.project-tab.active {
+    color: #a0f;
+    border-bottom: 2px solid #a0f;
+}
+
+.project-tab:not(.active):hover {
+    color: #a0f;
+    border-bottom: 2px solid #a0f;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .projects-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .projects-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
