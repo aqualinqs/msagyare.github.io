@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navContainer = document.querySelector('.nav-container');
+
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navContainer.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-container a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                navContainer.classList.remove('active');
+            });
+        });
+    }
 
     // 1. Fade-in/Fade-out Animation for the Title
     const animatedTitle = document.querySelector('.animated-title');
